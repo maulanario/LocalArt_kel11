@@ -1,0 +1,369 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+  }
+
+  .navbar {
+    background-color: #FBEEDB; /* Warna coklat */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .navbar .logo img {
+    margin-right: 10px;
+  }
+  .nav-links{
+    margin-left: 450px;
+  }
+  .nav-links a {
+    color: black; /* Ubah warna teks menu navigasi */
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .search-box input[type="text"] {
+    padding: 8px;
+    border: none;
+    background-color: FBEEDB(255, 255, 255, 0.8); 
+    border-radius: 20px; /* Border radius full */
+  }
+  
+
+  
+  .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info .user-name {
+  color: black; /* Ubah warna teks nama pengguna */
+  margin-right: 10px;
+}
+
+.user-info .user-avatar img {
+  border-radius: 50%;
+  margin-right: 10px;
+  order: -1; /* Menukar posisi gambar pengguna dengan nama pengguna */
+}
+
+.content {
+  background-image: url('asset/Login.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Mengisi seluruh tinggi viewport */
+  display: grid; /* Menggunakan grid */
+  place-items: center; /* Tengahkan konten secara vertikal dan horizontal */
+}
+
+.content-inner {
+  color: white;
+  border: 2px solid white; /* Atur border dengan ketebalan 2px dan warna putih */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* Atur warna background semi-transparan untuk konten */
+.content-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+/* Style for footer */
+.footer {
+  background-color: #8B4513;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-logo img {
+  width: 80px;
+  height: 80px;
+}
+
+.footer-links,
+.footer-locations,
+.footer-popular-links,
+.footer-follow-us,
+.footer-signup {
+  margin-bottom: 20px; /* Spasi antara setiap bagian footer */
+}
+
+.footer-links ul,
+.footer-locations ul,
+.footer-popular-links ul,
+.footer-follow-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links h3,
+.footer-locations h3,
+.footer-popular-links h3,
+.footer-follow-us h3,
+.footer-signup h3 {
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-locations a,
+.footer-popular-links a,
+.footer-follow-us a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-signup p {
+  margin-bottom: 10px;
+}
+
+.footer-email {
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+}
+
+.footer-button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #fff;
+  color: #8B4513;
+  cursor: pointer;
+}
+  
+  .section {
+    position: relative;
+    background-image: url('asset/Login.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  .logo-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: auto;
+  }
+  .logo-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: auto;
+  }
+  .orange-text {
+    color: #ff5c00;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 80px; 
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5c00;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .register-box {
+    background-color: grey;
+    padding: 10px;
+    margin: 10px auto 0;
+    text-align: center;
+    width: 567px;
+  }
+
+  .sign-in-box {
+    background-color: grey;
+    padding: 10px;
+    margin: 10px auto 0;
+    text-align: center;
+    width: 554px;
+  }
+
+  .gagal-box {
+    background-color: red;
+    padding: 10px;
+    margin: 10px auto 0;
+    text-align: center;
+    width: 554px;
+  }
+  
+  .form-box {
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto; 
+    width: calc(100% - 40px);
+  }
+
+  .forgot-password-box {
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto; 
+    width: 534px
+  }
+
+  .paragraf-box {
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto;
+    width: 534px;
+    color: black; /* Warna teks hitam */
+  }
+  
+  
+  .input-field {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .checkbox-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-box input[type="checkbox"] {
+    margin-right: 5px;
+    transform: scale(0.8);
+  }
+  
+  .checkbox-box label {
+    color: black; 
+    font-size: 0.8em;
+  }
+  
+  .signup-link {
+    margin-top: -28px;
+    margin-left: 430px;
+  }
+  
+  .signup-link a {
+    color: black;
+    font-size: 0.8em;
+    text-decoration: none;
+  }
+  
+.button-group {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .register-btn, .facebook-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .register-btn {
+    background-color: blue;
+    color: white;
+    border: none;
+  }
+  
+  .facebook-btn {
+    background-color: #3b5998;
+    color: white;
+    border: none;
+  }
+
+  .otp-btn{
+    background-color: #fff;   
+    flex-direction: column;
+    height: 50px;
+  }
+
+  .ootp-btn {
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    width: 500px;
+    height: 30px;
+  }
+  
+
+  .ootp-btn:hover {
+    background-color: darkblue; 
+  }
+  
+  .verification-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .code-box {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .resend-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .resend-code a {
+    color: black;
+    justify-content: center;
+    margin-top: -50px;
+  }
+  
+  
+  
+  
+  
+  
